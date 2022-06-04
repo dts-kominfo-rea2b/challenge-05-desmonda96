@@ -11,7 +11,7 @@ const sorter = (listNama, cbSort) => {
   let hasil = [];
   
   for(let i=0; i<listNama.length; i++){
-    hasil.push(`${i+1}.${listNama[i]}`);
+    hasil.push(`${i+1}. ${listNama[i]}`);
   }
 
   return hasil;
