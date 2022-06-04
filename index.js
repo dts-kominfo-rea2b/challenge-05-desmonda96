@@ -6,7 +6,16 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 // "1. Nama"
 // "2. Nama"
 // ...
-const sorter = null;
+const sorter = (listNama, cbSort) => {
+  cbSort(listNama);
+  let hasil = [];
+  
+  for(let i=0; i<listNama.length; i++){
+    hasil.push(`${i+1}.${listNama[i]}`);
+  }
+
+  return hasil;
+}
 
 // TODO: Fungsi untuk mengurutkan array of string secara ascending
 // mengembalikan array yang sudah diurutkan
